@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+
+<div *ngIf="currentPerson">
+    <app-buttons (showPropertyEvent)="showProperty($event)"></app-buttons>
+
+    <app-data *ngIf="propertyToShow" [person]="currentPerson" [property]="propertyToShow"></app-data>
+</div>
