@@ -1,7 +1,10 @@
-<h1>{{title}}</h1>
 
-<div *ngIf="currentPerson">
-    <app-buttons (showPropertyEvent)="showProperty($event)"></app-buttons>
+<div class="page">
+    <h1 class="title">{{title}}</h1>
 
-    <app-data *ngIf="propertyToShow" [person]="currentPerson" [property]="propertyToShow"></app-data>
+    <div class="content" *ngIf="currentPerson">
+        <app-buttons (showPropertyEvent)="showProperty($event)" class="button"></app-buttons>
+
+        <app-data *ngIf="propertyToShow" [person]="currentPerson" [property]="propertyToShow"></app-data>
+    </div>
 </div>

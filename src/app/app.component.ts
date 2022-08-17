@@ -7,7 +7,7 @@ import { DataRequestService } from './data-request.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'interactiveCard';
+  title = 'interactive_Card';
   currentPerson: any;
   propertyToShow = '';
 

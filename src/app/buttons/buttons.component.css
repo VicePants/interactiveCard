@@ -1,9 +1,40 @@
 li{
     list-style-type: none;
-    padding: 15px;
+    padding: 0 15px;
 }
 
-button{
-    background-color: aqua;
-    cursor: pointer;
+.content{
+	padding-top: 15%;
+
+}
+
+button {
+	background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.5rem;
+	margin: 1rem;
+	min-width: 25px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: auto;
+}
+
+button:hover{
+    background: #A81000;
+}
+
+button:focus{
+    background: #A81000;
+}
+
+button:active{
+    box-shadow: 2px 2px 5px #fc894d;
+    box-shadow: -2px -2px -5px #fc894d;
 }
